@@ -13,7 +13,7 @@
         <div class="header-box mx-auto">
             <div class="overlay"></div>
             <div class="content">
-                <h1 class="text-4xl font-bold">BIENVENIDOS</h1>
+                <h1 class="text-4xl font-bold text-center">BIENVENIDOS</h1>
                 <p class="mt-2 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis similique, harum maxime alias consectetur quae eos quibusdam perspiciatis sit ad distinctio modi at corrupti error iusto cum ut repudiandae itaque.
                 Minus, dicta tempore modi repellendus similique temporibus ratione sequi ut reiciendis in ipsa? Dolorum ducimus, consectetur ad distinctio ea libero maxime optio, voluptatum ipsam totam vero laborum doloremque inventore cupiditate!
                 Praesentium distinctio possimus sint tempore perspiciatis impedit culpa harum hic. Accusamus cumque, quaerat, numquam consequatur laboriosam quam dolorem tempore, sapiente repellendus explicabo animi porro. Voluptatem quis est recusandae enim laborum?</p>
@@ -47,11 +47,21 @@
 
         <!-- Sección de Encabezado -->
         <div class="header-box-news mx-auto" style="margin-top: 100px;">
-            <div class="overlay"></div>
+            <div class="overlay-news"></div>
             <div class="content">
-                <p class="mt-2 text-lg">Anuncian la elaboración de guías para conducir audiencias laborales y fortalecer el acceso a la justicia para los trabajadores.</p>
+                <!-- Inserción del Slider de Texto -->
+                <div class="text-slider-container relative my-4">
+                    <button class="prev-button absolute left-0 top-0 h-full text-white bg-black opacity-50 hover:opacity-75">‹</button>
+                    <ul class="text-slider overflow-hidden whitespace-nowrap transition-all duration-300 ease-linear">
+                        <li class="inline-block w-full text-center px-4">Anuncio 1: Anuncian la elaboración de guías para conducir audiencias laborales y fortalecer el acceso a la justicia para los trabajadores.</li>
+                        <li class="inline-block w-full text-center px-4">Anuncio 2: Anuncian la elaboración de guías para conducir audiencias laborales y fortalecer el acceso a la justicia para los trabajadores.</li>
+                        <li class="inline-block w-full text-center px-4">Anuncio 3: Anuncian la elaboración de guías para conducir audiencias laborales y fortalecer el acceso a la justicia para los trabajadores.</li>
+                    </ul>
+                    <button class="next-button absolute right-0 top-0 h-full text-white bg-black opacity-50 hover:opacity-75">›</button>
+                </div>
             </div>
         </div>
+
 
         <!-- Sección de Navegación/Categorías -->
         <div class="flex justify-around py-8">
@@ -74,5 +84,6 @@
             </div>
         </div>
     </div>
+    <script src="./js/index.js"></script>      
 </body>
 </html>
