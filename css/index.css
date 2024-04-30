@@ -1,0 +1,86 @@
+body {
+    background-image: url('../img/red blanca.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+.circle-background {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 0; /* Alineación en la parte superior del contenedor */
+    left: 0; /* Alineación a la izquierda del contenedor */
+    z-index: 1; /* Debajo de la imagen del mapa */
+}
+.header-box {
+    width: calc(100% - 2rem);
+    background-image: url('../img/office-person.jpg');
+    background-size: cover;    
+    background-position: center;
+    border-radius: 12px;
+    padding: 40px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    
+}
+.header-box-news {
+    width: calc(100% - 2rem);
+    background-image: url('../img/panel.jpg');
+    background-size: cover;    
+    background-position: center;
+    border-radius: 12px;
+    padding: 40px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(103, 86, 85, 0.5); /* Marrón para el rectángulo de bienvenida */
+    border-radius: 12px;
+    z-index: 1;
+}
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.icon-container {
+    position: relative;
+    margin-top: 20px; /* Añadido para dar espacio entre los iconos y el encabezado */
+}
+
+.map-image {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0; /* Alineación en la parte superior del contenedor */
+    left: -20px; /* Alineación a la izquierda del contenedor */
+    z-index: 3; /* Asegurando que el mapa esté sobre el círculo */
+}
+
+/* Colores específicos para cada círculo */
+.circle-background:nth-child(1) { background-color: #6B3241; }
+.circle-background:nth-child(2) { background-color: #70A7D9; }
+.circle-background:nth-child(3) { background-color: #345386; }
+.circle-background:nth-child(4) { background-color: #938C86; }
+
+/* Estilos para el texto debajo de cada círculo */
+.icon-container p {
+    position: absolute;
+    top: 110px; /* Posiciona el texto justo debajo del círculo */
+    width: 100%; /* Asegura que el texto se alinea correctamente */
+    left: -15px; /* Alinea el texto a la izquierda del contenedor */
+    text-align: center; /* Centra el texto */
+    z-index: 3; /* Asegura que el texto está sobre los otros elementos */
+}
